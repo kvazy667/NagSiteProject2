@@ -10,3 +10,12 @@ class project(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class person(models.Model):
+    fio = models.CharField('ФИО', max_length=100)
+    image = models.ImageField('фото')
+    file = models.FileField('файл')
+
+    def __str__(self):
+        return self.fio
