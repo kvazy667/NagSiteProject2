@@ -5,6 +5,18 @@
     <title>Title</title>
 </head>
 <body>
+  <form method="post">
+      {% csrf_token %}
+      <p>name</p>
+        {{ form.name }}</br>
+      <p>description</p>
+        {{ form.description }}</br>
+            <p>team quantity</p>
+        {{ form.team_quantity }}</br>
+    <button>add</button>
+  </form>
+
+<a href="/">формы</a>
 
 </body>
 </html>
